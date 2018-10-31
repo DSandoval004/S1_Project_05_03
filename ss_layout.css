@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+/* Filled in information */
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 3
@@ -7,7 +7,7 @@
    
    Layout Style Sheet for A Soldier's Scrapbook
    Author: Diego Sandoval
-   Date:   24/24
+   Date:   10/24/18
    
    Filename: ss_layout.css
 
@@ -15,6 +15,7 @@
 
 
 /* Article Styles */
+/* made the article display as block, float left and have a set width */
 body article {
     display: block;
     float: left;
@@ -22,6 +23,7 @@ body article {
 }
 
 /* First Line and Drop Cap Styles */
+/* Makes the first line have small capital letters, The next style made the first letter of the first sentence of the first paragraph really big and fancy looking. */
 body article p:first-of-type::first-line {
     font-size: 1.25em;
     font-variant: small-caps;
@@ -37,13 +39,14 @@ body article p:first-of-type::first-letter {
 }
 
 /* Aside Styles */
+/* Sets the aside to a fix size and float left */
 body aside#map {
     width: 768px;
     float: left;
 }
 
-
 /* Map Styles */
+/* sets the div with the id of battleMap to a set width and a set margin. Then set the width of the image in that div to take up 100% of that div. */
 body aside div#battleMap {
     width: 688px;
     margin: 20px auto;
@@ -56,6 +59,7 @@ body aside div img.mapImage {
 }
 
 /* Interactive Map Styles */
+/* makes all the hypperlinked images float onto the map so that they are in an absolute spot fixed spot on the map. */
 body aside div a {
     position: absolute;
 }
@@ -97,6 +101,7 @@ body aside div a#marker6 {
 }
 
 /* Map Information Styles */
+/* Hides the map information, then makes it so when the battlemarker are hovered over they show their corresponding map information. */
 .mapInfo {
     display: none;
 }
